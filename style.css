@@ -1,49 +1,100 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+    --darkColor: #47595A;
 }
 
 body {
     background-color: #F4F4F4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--darkColor);
 }
 
+/* HEADER styling here (my name and the NavBar) */
 .header {
-    background-color: #787878;
-    padding: 25px 25px 25px 0;
+    background-color: var(--darkColor);
+    padding: 20px 20px 20px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.header h1 {
+.header h1 { 
     font-size: 48px;
     background-color: #BAD3D2;
     border-radius: 0 15px 15px 0;
     padding: 5px 10px 5px 60px;
-    color: #787878;
+    color: var(--darkColor);
 }
 
 .header div ul li {
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: 20px;
     color: white;
     display: inline;
     line-height: 3;
 }
 
-.atlanta {
-    height: 250px;
+/* Welcome photo and "Welcome to my page" */
+.coverPhoto {
+    height: 300px;
     width: 100%;
-    background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/750/612/original/flat-design-abstract-background-soft-liquid-shapes-template-with-modern-gradient-background-colors-cool-aesthetic-background-design-suitable-for-social-media-post-mobile-app-banner-web-ads-free-vector.jpg");
     background-size: cover;
 }
 
-.atlanta #welcome {
+.coverPhoto #welcome {
     z-index: 1;
-    color: #787878;
+    color: var(--darkColor);
     background-color: #BAD3D2;
     font-size: 25px;
     padding: 10px 60px 10px 10px;
     border-radius: 15px 0 0 15px;
+    float: right;
+    margin-top: 200px;
 }
+
+/* Main content of the page starts here.*/
+.content {
+    margin: 20px;
+}
+
+.sideBarHeading {
+    font-size: 50px;
+    color: var(--darkColor);
+    text-align: right;
+    border-right-style: solid;
+    border-color: var(--darkColor);
+    padding: 30px;
+    width: 300px;
+}
+
+/* Section 1: About Me */
+.aboutMe {
+    display: flex;
+}
+
+.aboutMe #bio {
+    width: 65%;
+}
+
+.aboutMe div p {
+    margin-bottom: 15px;
+    margin-left: 60px;
+    line-height: 1.5;
+}
+
+/* Section 2: My work */
+.work {
+    display: flex;
+}
+
+#photos {
+    margin-left: 60px;
+}
+
+#atlanta {
+}
+
+/* .work #otherPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
