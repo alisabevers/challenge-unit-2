@@ -16,16 +16,16 @@
         <div>
             <ul>
                 <li>
-                    <a>About Me</a>
+                    <a href="#navAboutMe">About Me</a>
                 </li>
                 <li>
-                    <a>Work</a>
+                    <a href="#navWork">Work</a>
                 </li>
                 <li>
-                    <a>Contact Me</a>
+                    <a href="#navContactMe">Contact Me</a>
                 </li>
                 <li>
-                    <a>Resume</a>
+                    <a href="#navContactMe">Resume</a>
                 </li>
             </ul>
         </div>
@@ -34,43 +34,62 @@
         <h2 id="welcome">Welcome to my page!</h2>
     </div>
     <div class="content">
-        <div class="aboutMe">
+        <div class="aboutMe" id="navAboutMe">
                 <div class="sideBarHeading">
-                    <h2>About Me</h2>
+                    <h2 id="aboutMe">About Me</h2>
                 </div>
                 <div id="bio">
                     <p>
                         My name is Alisa, but my close friends and family call me Ali. I am half Japanese and half American, and I love traveling, eating, and exercising.
                     </p>
                     <p>
-                        I graduated from Georgia State University in 2020 with a degree in Psychology and Marketing. After a few years working at Personal Injury law firms, I realized that Personal Injury wasn't for me, so I chose to dive into Tech. 
+                        I graduated from Georgia State University in 2020 with a degree in Psychology and Marketing. After a few years working at Personal Injury law firms, I realized that Personal Injury wasn't for me... So I chose to dive into Tech. 
                     </p>
                     <p>
                         With no background or experience in the Tech industry, I figured it was best for me to start learning how to code as soon as possible. I enrolled in GA Tech's Coding Bootcamp and expect to graduate in June, 2023. Feel free to peruse this online portfolio to see some of my work!
                     </p>
                 </div>
         </div>
-        <div class="work">
+        <div class="work" id="navWork">
             <div class="sideBarHeading">
-                <h2>Work</h2>
+                <h2 id="work">Work</h2>
             </div>
-            <div id="photos">
-                <div id="atl">
-                    <img src="https://images.unsplash.com/photo-1610741686854-5948cd981569?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXRsYW50YSUyMHNreWxpbmV8ZW58MHx8MHx8&w=1000&q=80=" alt="atlantaSkyline">
+            <div class="photos">
+                <div class= "mainPhoto">
+                    <div class="photo1">
+                        <img src="./images/atlantaSkyLine.jpeg"     alt="atlantaSkyline" id="atl">
+                        <h3 id="atlText">Atlanta Skyline</h3>
+                    </div>
                 </div>
-                <!-- <div id="otherPhotos">
-                    <img src="https://www.kikkoman.co.uk/assets/image-cache/uploads/general/Ramen_wide.1b346709.png" alt="ramen">
-                    <img src="https://www.cityofcocoabeach.com/ImageRepository/Document?documentID=6251" alt="beach">
-                    <img src="https://images.theconversation.com/files/484174/original/file-20220913-2241-id16e.jpg?ixlib=rb-1.1.0&rect=0%2C689%2C5550%2C2775&q=45&auto=format&w=668&h=324&fit=crop" alt="travel">
-                    <img src="http://www.homegymfiend.com/wp-content/uploads/2017/04/benefits-of-working-out-at-home-640x350.jpg" alt="lifting">
-                </div> -->
+                <div class="smallPics">
+                    <div class="smallPicsOne">
+                        <div class="photo2ramen">
+                            <img src="./images/ramen.png" alt="ramen" id="ramen">
+                                <h3>Ramen</h3>
+                        </div>
+                        <div class="photo3travel">
+                            <img src="./images/beach.jpeg" alt="beach" id="beach">
+                                <h3>Beach</h3>
+                        </div>
+                    </div>
+                    <div class="smallPicsTwo">
+                        <div class="photo4beach">
+                            <img src="./images/travelPic.jpg" alt="travel" id="travel">
+                                <h3>Travel</h3>
+                        </div>
+                        <div class="photo5lifting">
+                            <img src="./images/lifting.jpeg" alt="lifting" id="lifting">
+                            <h3>Lifting</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="navContactMe">
             <div class="sideBarHeading">
-                <h2>Contact Me</h2>
+                <h2 id="contactMe">Contact Me</h2>
             </div>
-                <ul>
+                <ul class="reachMe">
                     <li>
                         555.555.5555
                     </li>
@@ -78,7 +97,7 @@
                         alisabevers@gmail.com
                     </li>
                     <li>
-                        <a href="https://github.com/alisabevers"GitHub></a>
+                        <a href="https://github.com/alisabevers"GitHub>GitHub</a>
                     </li>
                 </ul>
         </div>

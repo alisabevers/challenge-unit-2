@@ -1,5 +1,8 @@
 :root {
     --darkColor: #47595A;
+    --smallPicSize: 35%;
+    --widthOfContent: 70%;
+    --lightGreen: #BAD3D2;
 }
 
 body {
@@ -18,7 +21,7 @@ body {
 
 .header h1 { 
     font-size: 48px;
-    background-color: #BAD3D2;
+    background-color: var(--lightGreen);
     border-radius: 0 15px 15px 0;
     padding: 5px 10px 5px 60px;
     color: var(--darkColor);
@@ -42,8 +45,7 @@ body {
 
 .coverPhoto #welcome {
     z-index: 1;
-    color: var(--darkColor);
-    background-color: #BAD3D2;
+    background-color: var(--lightGreen);
     font-size: 25px;
     padding: 10px 60px 10px 10px;
     border-radius: 15px 0 0 15px;
@@ -72,12 +74,12 @@ body {
 }
 
 .aboutMe #bio {
-    width: 65%;
+    width: var(--widthOfContent);
 }
 
 .aboutMe div p {
     margin-bottom: 15px;
-    margin-left: 60px;
+    margin-left: 5%;
     line-height: 1.5;
 }
 
@@ -86,15 +88,61 @@ body {
     display: flex;
 }
 
-#photos {
-    margin-left: 60px;
+img {
+    opacity: .5;
 }
 
-#atlanta {
+img:hover {
+    cursor: grab;
+    opacity: 1;
 }
 
-/* .work #otherPhotos {
+.photos {
+    margin-left: 5%;
+    width: 75%;
+}
+
+#atl {
+    width: var(--widthOfContent);
+    padding: 1%;
+    background-color: var(--lightGreen);
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 15px;
+    background-color: var(--lightGreen);
+    padding: 10px;
+    border-radius: 0 15px 15px 0;
+    float: left;
+}
+
+.photo1 img h3 {
+    z-index: 1;
+}
+
+.smallPics {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-} */
+}
+
+.smallPics img { 
+    width: var(--smallPicSize);
+    padding: 1%;
+    background-color: var(--lightGreen);
+    margin: 2% 2% 2% 0;
+}
+
+.contact {
+    display: flex;
+}
+
+.reachMe {
+    margin-left: 5%;
+    font-size: 20px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
